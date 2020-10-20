@@ -36,6 +36,8 @@ class UserLocationOptions extends LayerOptions {
   // https://github.com/Lyokone/flutterlocation#public-methods-summary
   int locationUpdateIntervalMs;
 
+  bool disablePermissionRequest;
+
   UserLocationOptions(
       {@required this.context,
       @required this.markers,
@@ -55,5 +57,6 @@ class UserLocationOptions extends LayerOptions {
       this.zoomToCurrentLocationOnLoad: false,
       this.showHeading: true,
       this.locationUpdateInBackground: true,
-      this.locationUpdateIntervalMs: 1000});
+      this.locationUpdateIntervalMs: 1000,
+      this.disablePermissionRequest: true});
 }
